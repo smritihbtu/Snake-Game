@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.body{
+    background: url("../bg.jpg");
+    /* background-color: aquamarine; */
+    min-height: 100vh;
+    /* background-size: 95vw , 80vh; */
+    background-size: 10vw , 1000vh;
+    /* background-size: contain; */
+    /* background-image: 180vh; */
+    /* background-repeat: no-repeat; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 49px;
+    right: 180px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+#board{
+    background: linear-gradient(rgb(128, 0, 0),yellow);
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18 , 1fr);
+    grid-template-columns: repeat(18 , 1fr);
+}
+
+.head{
+    background : linear-gradient(red,yellow);
+    border: 2px solid purple;
+    transform: scale(1.02);
+    border-radius: 9px ;
+}
+.snake{
+    background-color: purple;
+    /* border: 25vmin solid white; */
+    border-radius: 12px;
+}
+
+.food{
+    background: linear-gradient(black,red);
+    /* border: 25vmin solid black; */
+    border-radius: 8px;
+
+}
